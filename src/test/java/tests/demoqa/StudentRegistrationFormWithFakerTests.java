@@ -1,8 +1,10 @@
-package tests;
+package tests.demoqa;
 
 import com.github.javafaker.Faker;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import tests.TestBase;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
@@ -11,6 +13,8 @@ import static com.codeborne.selenide.Selenide.*;
 public class StudentRegistrationFormWithFakerTests extends TestBase {
 
     @Test
+    @Disabled
+
     void successfulFillFormTest() {
         Faker faker = new Faker();
 
