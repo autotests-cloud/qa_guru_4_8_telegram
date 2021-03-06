@@ -16,7 +16,7 @@ public class TestBase {
         addListener("AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(true));
         Configuration.browser = System.getProperty("browser", "chrome");
         Configuration.startMaximized = true;
-        System.setProperty("remote_driver", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
+//        System.setProperty("remote_driver", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
         if(System.getProperty("remote_driver") != null) {
             // config for Java + Selenide
             DesiredCapabilities capabilities = new DesiredCapabilities();
